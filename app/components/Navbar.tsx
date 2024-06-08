@@ -1,7 +1,6 @@
-/** eslint-disable react/jsx-no-undef */
 "use client";
-
 import { useRouter } from "next/navigation";
+// @ts-ignore
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 interface MenuItem {
@@ -10,6 +9,7 @@ interface MenuItem {
 }
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
   const menuItems: MenuItem[] = [
     {
       name: "Contact",

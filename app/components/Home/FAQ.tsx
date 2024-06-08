@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+// @ts-ignore
+import { useState } from "react";
 
 const FAQ = () => {
   const faqs = [
@@ -34,11 +36,11 @@ const FAQ = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number>(-1);
 
-  const handleToggle = (index) => {
+  const handleToggle = (index: number) => {
     if (activeIndex === index) {
-      setActiveIndex(null);
+      setActiveIndex(-1);
     } else {
       setActiveIndex(index);
     }
