@@ -13,7 +13,7 @@ import image6 from "../../assets/Scale Up.svg";
 import image8 from "../../assets/Tools.svg";
 import image7 from "../../assets/Tune.svg";
 import image9 from "../../assets/Voice.svg";
-import "../../utili/feature.css";
+import "../../utili/Feature.css";
 import Card1 from "../Feature/CardType1";
 import Card2 from "../Feature/CardType2";
 import FinalFeature from "../Feature/FinalComp";
