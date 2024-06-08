@@ -1,4 +1,5 @@
 "use client";
+import Footer from "./components/Footer";
 import Explore from "./components/Home/Explore";
 import FAQ from "./components/Home/FAQ";
 import Features from "./components/Home/Features";
@@ -8,12 +9,16 @@ export default function Home() {
   return (
     <section
       className="flex flex-col items-center justify-between
-      px-4 gap-8 w-[30rem]"
+      gap-8 md:w-[30rem]"
     >
-      <Hero />
-      <Explore />
-      <Features />
-      <FAQ />
+      <div className="px-4 ">
+        {" "}
+        <Hero />
+        <Explore />
+        <Features />
+        <FAQ />
+      </div>
+      <Footer />
     </section>
   );
 }
